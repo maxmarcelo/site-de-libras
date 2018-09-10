@@ -1,0 +1,146 @@
+
+<! Doctype html !>
+<html lang="pt">
+<meta charset="ISO-8859-1">
+<head>
+<title> Librics - Home   </title>
+
+<link rel="stylesheet" href="css/estilo.css" type="text/css">
+<link media="screen" rel="stylesheet" href="css/dropdown-menu.css" type="text/css" />
+<script>
+    function validar() {
+
+    if (form.nome.value=="") {
+    alert("Preencha o nome corretamente.");
+    form.nome.focus();
+    }
+	if (form.assunto.value=="") {
+    alert("Preencha o assunto.");
+    form.nome.focus();
+    }
+    var filtro_mail = /^.+@.+\..{2,3}$/
+    if (!filtro_mail.test(form.email.value) || form.email.value=="") {
+    alert("Preencha o e-mail corretamente.");
+    form.email.focus();
+    }
+
+    if (form.mensagem.value=="") {
+    alert("Preencha a mensagem.");
+    form.nome.focus(); 
+   }
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="seguratudo">
+  
+   <header>
+   
+     <div id="logo"><a href="index.html"><img src="imagens/topolibrics102x366-transparente.png"></a></div> 
+        
+ 
+ 
+   </header> 
+    
+   
+   <nav>
+   
+ 
+     <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ocurso.html">O Curso</a></li>
+        <li><a href="#"> Aulas<a>
+                <ul>
+                      <li><a href="aula1.html">Aula 1</a></li>
+		              <li><a href="aula2.html">Aula 2</a></li>
+		              <li><a href="aula3.html">Aula 3</a></li>
+		              <li><a href="aula4.html">Aula 4</a></li>
+		              <li><a href="aula5.html">Aula 5</a></li>
+		              <li><a href="aula6.html">Aula 6</a></li>
+		              <li><a href="aula7.html">Aula 7</a></li>
+		              <li><a href="aula8.html">Aula 8</a></li>
+		              <li><a href="aula9.html">Aula 9</a></li>
+		              <li><a href="aula10.html">Aula 10</a></li>                  
+                </ul>
+        </li>
+		<li><a href="#">Jogos<a>
+                <ul>
+                     <li><a href="jogoaula1.html">Jogo da Aula 1</a></li>
+		             <li><a href="jogoaula2.html">Jogo da Aula 2</a></li>
+		             <li><a href="jogoaula3.html">Jogo da Aula 3</a></li>
+		             <li><a href="jogoaula4.html">Jogo da Aula 4</a></li>
+		             <li><a href="jogoaula5.html">Jogo da Aula 5</a></li>
+		             <li><a href="jogoaula6.html">Jogo da Aula 6</a></li>
+		             <li><a href="jogoaula7.html">Jogo da Aula 7</a></li>
+		             <li><a href="jogoaula8.html">Jogo da Aula 8</a></li>
+		             <li><a href="jogoaula9.html">Jogo da Aula 9</a></li>
+		             <li><a href="jogoaula10.html">Jogo da Aula 10</a></li>
+		             <li><a href="jogoaula10.html">Quiz Final</a></li>                 
+                </ul>
+        </li>
+        <li><a href="contatos.html">Contatos</a></li>
+        <li><a href="links">Links</a> </li>               
+     </ul>
+
+   
+   
+   </nav>
+   
+   <section>
+   <br>
+   <h4> Formulario de Contatos </h4>
+   
+  
+  <br>
+  <form  name="form" method="post"> 
+ 
+   <p> Seu nome<input type="Text" name="nome" size="40"></p> 
+   <p> E-mail:<input type="Text" name="email" size="40"></p> 
+   <p> Assunto:<input type="Text" name="assunto" size="40"></p> 
+   <p> Mensagem: <br><textarea name="mensagem" cols="28" rows="5"></textarea></p><br> 
+   
+   
+   <p>O que achou do site?
+   <input type="Radio" name="Gostou" value="bom" CHECKED >bom 
+   <input type="Radio" name="Gostou" value="regular"> regular  
+   <input type="Radio" name="Gostou" value="ruim">ruim</p> 
+   
+   <p>Qual a página que você mais gostou?
+   <select name="Melhor Página">
+   <option value="Jogos">Jogos</option> 
+   <option value="Imagens">Imagens</option>
+   <option value="facilidade">Facilidade no Uso</option> 
+   </select></p>
+   
+   <p>O que acha está faltando? <input type="Text" name="Oqueestáfaltando?"></p> 
+   
+   <p>Acredita que o site lhe ajudou?
+   <input type="Radio" name="Ajudou?" value="sim" CHECKED >Sim 
+   <input type="Radio" name="Ajudou?" value="Não!">Não</p>
+   <br> 
+  
+   
+   <input type="Submit" value="Enviar" onclick="validar()"> 
+   <input type="Reset" value="Limpar Dados">
+  </form>
+  
+  
+ 
+      
+
+   </section>
+ 
+   <footer>
+   
+   <p> 2014 - Librics <a href="creditos.html"> Developers</a></p>
+    
+   </footer>
+
+</div> <!-- segura tudo   -->
+</body>
+</html>

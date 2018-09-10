@@ -1,0 +1,131 @@
+<! Doctype html !>
+<html lang="pt">
+<meta charset="ISO-8859-1">
+<head>
+<title> Aula 3   </title>
+
+<link rel="stylesheet" href="css/estilo.css" type="text/css">
+<link media="screen" rel="stylesheet" href="css/dropdown-menu.css" type="text/css" />
+ 
+   
+	<script language="javascript" type="text/javascript">
+
+	minhafoto = new Array("imagens3/img0.jpg",
+	                      "imagens3/img1.jpg",
+					      "imagens3/img2.jpg",
+	                      "imagens3/img3.jpg",
+					      "imagens3/img4.jpg",
+	                      "imagens3/img5.jpg",
+					      "imagens3/img6.jpg",
+	                      "imagens3/img7.jpg",
+					      "imagens3/img8.jpg",
+	                      "imagens3/img9.jpg")
+	essaFoto = 0
+	controle = minhafoto.length - 1
+
+	function processoAnterior() {
+		if (document.images && essaFoto > 0) {
+			essaFoto--
+			document.minhasimagens.src=minhafoto[essaFoto]
+		}
+	}
+
+	function processoProxima() {
+		if (document.images && essaFoto < controle) {
+			essaFoto++
+			document.minhasimagens.src=minhafoto[essaFoto]
+		}
+	}
+
+	</script>
+	
+
+
+
+</head>
+
+<body>
+
+<div id="seguratudo">
+  
+   <header>
+   
+     <div id="logo"><a href="index.html"><img src="imagens/topolibrics102x366-transparente.png"></a></div> 
+       
+ 
+ 
+   </header> 
+    
+   
+   <nav>
+   
+ 
+     <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ocurso.html">O Curso</a></li>
+        <li><a href="#"> Aulas<a>
+                <ul>
+                      <li><a href="aula1.html">Aula 1</a></li>
+		              <li><a href="aula2.html">Aula 2</a></li>
+		              <li><a href="aula3.html">Aula 3</a></li>
+		              <li><a href="aula4.html">Aula 4</a></li>
+		              <li><a href="aula5.html">Aula 5</a></li>
+		              <li><a href="aula6.html">Aula 6</a></li>
+		              <li><a href="aula7.html">Aula 7</a></li>
+		              <li><a href="aula8.html">Aula 8</a></li>
+		              <li><a href="aula9.html">Aula 9</a></li>
+		              <li><a href="aula10.html">Aula 10</a></li>                  
+                </ul>
+        </li>
+		<li><a href="#">Jogos<a>
+                <ul>
+                     <li><a href="jogoaula1.html">Jogo da Aula 1</a></li>
+		             <li><a href="jogoaula2.html">Jogo da Aula 2</a></li>
+		             <li><a href="jogoaula3.html">Jogo da Aula 3</a></li>
+		             <li><a href="jogoaula4.html">Jogo da Aula 4</a></li>
+		             <li><a href="jogoaula5.html">Jogo da Aula 5</a></li>
+		             <li><a href="jogoaula6.html">Jogo da Aula 6</a></li>
+		             <li><a href="jogoaula7.html">Jogo da Aula 7</a></li>
+		             <li><a href="jogoaula8.html">Jogo da Aula 8</a></li>
+		             <li><a href="jogoaula9.html">Jogo da Aula 9</a></li>
+		             <li><a href="jogoaula10.html">Jogo da Aula 10</a></li>
+		             <li><a href="jogoaula10.html">Quiz Final</a></li>                 
+                </ul>
+        </li>
+        <li><a href="contatos.html">Contatos</a></li>
+        <li><a href="links">Links</a> </li>               
+     </ul>
+
+   
+   
+   </nav>
+   
+   <section>
+
+      <br>
+     
+      <h2 align="center">Aula 3 - Números</h2>
+	  <br>	
+	  <p align="center"><img src="imagens3/img0.jpg" name="minhasimagens"></P>
+	  <br>
+	  <h1 align="center"><a href="javascript:processoAnterior()">&lt;&lt; Anterior</a>&nbsp;&nbsp;|| <a href="javascript:processoProxima()">Próxima &gt;&gt;</A></h1>
+	  
+	  
+	  <br><br><br><br>
+	  
+	  <h2 align="center"><a href="jogoaula3.html">Ir para o teste dessa aula></a><h2>
+	  
+	 
+	  
+	  
+   </section>
+ 
+   <footer>
+   
+   <p> 2014 - Librics <a href="creditos.html"> Developers</a></p>
+    
+   </footer>
+
+</div> <!-- segura tudo   -->
+</body>
+</html>
